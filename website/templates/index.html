@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero-news">
+
+    <div class="big-news">
+        <img src="assets/bignews.jpg">
+        <div class="bottom-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum provident
+            dolores suscipit laborum aliquam quod ratione. Fugiat laborum, rerum minima quaerat quia harum
+            tenetur cum sed fuga obcaecati dicta quam.</div>
+    </div>
+    <div class="rightsection">
+        <div class="ad-section1" style ">
+  <img src=" assets/ad1.jpg">
+            <div class="centered"><span>जाहिरातीसाठी संपर्क करा +91 6745237890</span></div>
+        </div>
+        <div class="v-cards">
+            <div class="vcardimg">
+                <img src="assets/vcard1.jpg" alt="image">
+            </div>
+            <div class="vcardtext">
+                एक उंदराचे पिटुकले पिल्लु पाहिल्यांदा आपल्या बिळातून बाहेर पडले होते, ते थोडा वेळ इकडेतिकडे
+                फिरून पुनः बिळात गेल्यावर आपल्या आईस म्हणते, ‘आई, ज्या या लहानशा जागेत तू मला लहानाचे मोठे
+                केलेस, ती जागा सोडून आज मी अंमळ बाहेर जाऊन आले; तेथे मी जी मौज पाहिली, ती काही विलक्षणच.
+            </div>
+        </div>
+        <div class="v-cards">
+            <div class="vcardimg">
+                <img src="assets/vcard1.jpg" alt="image">
+            </div>
+            <div class="vcardtext">
+                एक उंदराचे पिटुकले पिल्लु पाहिल्यांदा आपल्या बिळातून बाहेर पडले होते, ते थोडा वेळ इकडेतिकडे
+                फिरून पुनः बिळात गेल्यावर आपल्या आईस म्हणते, ‘आई, ज्या या लहानशा जागेत तू मला लहानाचे मोठे
+                केलेस, ती जागासोडून आज मी अंमळ बाहेर जाऊन आले; तेथे मी जी मौज पाहिली, ती काही विलक्षणच.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ! Cards section  -->
+
+<label class="sectioninfo">
+    <h2>Section 1</h2>
+</label>
+
+<section class="cards">
+    {% for news in newnews %}
+    <article class="card">
+        <img src="media/{{news.newsthumbnail}}" alt="Sample photo">
+        <div class="text">
+            <h3>{{news.newstitle}}</h3>
+
+        </div>
+        <div class="info">
+            <span>{{news.newsauthor}}</span> <span>{{news.newstime}}</span>
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+</main>
+<footer>
+    <div>
+        <label for="footerSection">@2023 | SP News All Rights Reserved with Copyright & TradeMarks</label>
+    </div>
+
+
+    </html>
+    {% endblock %}

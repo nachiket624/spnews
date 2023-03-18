@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block css %}
+    {% endblock %}
+    <title>{% block title %}Site Titel{% endblock %}</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="brand">
+                <label for="brand-label">SP News</label>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">राजकारण</a></li>
+                    <li><a href="#">शिक्षण</a></li>
+                    <li><a href="#">राष्ट्र</a></li>
+                    <li><a href="#">राज्य</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+</body>
+</html>
+{% endblock %}
