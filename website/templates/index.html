@@ -43,22 +43,19 @@
     <h2>Section 1</h2>
 </label>
 
-<section class="cards">
+
+<Section class="card-holder">
     {% for news in newnews %}
-    <article class="card">
-        <img src="media/{{news.newsthumbnail}}" alt="Sample photo">
-        <div class="text">
-            <h3>{{news.newstitle}}</h3>
-
+    <div class="card">
+        <img src="media/{{news.newsthumbnail}}" alt="">
+        <h3>{{news.newstitle}}</h3>
+        <div class="cardinfo">
+            <span>{{news.newsauthor}}</span>
+            <span>{{news.newstime}}</span>
         </div>
-        <div class="info">
-            <span>{{news.newsauthor}}</span> <span>{{news.newstime}}</span>
-        </div>
-
-    </article>
+    </div>
     {% endfor %}
-
-</section>
+</Section>
 
 </main>
 <footer>

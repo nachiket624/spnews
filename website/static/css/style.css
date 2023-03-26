@@ -146,34 +146,30 @@ footer{
 .sectioninfo h2{
     margin-left: 2rem;
 }
-.cards {
+.card-holder{
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
 }
-  .card {
-    width: 290px;
-    margin-bottom: 1rem;
-    flex: 0 0 260px;
-    margin-left: 2rem;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  } 
-  .card img {
-    width: 100%;
-    min-height: 250px;
-    max-height: 250px;
-  }
-  .card .text {
-    padding: 0 10px 10px;
-    color: blue;
-    
-  }
-  .card .info{
-    flex-wrap: wrap-reverse;
-  }
-  .info{
+.card{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 500px;
+    overflow-wrap: anywhere;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    border: 1px solid rgba(95, 95, 95, 0.607);
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.card h3{
+    display: flex;
+}
+.card img{
+   margin: 0.1rem 0.1rem 0rem 0.1rem;
+    align-self: center;
+    width: 298px;
+    height: 180px;
+}
+.card h3{
+    padding: 0.1rem;
+}
