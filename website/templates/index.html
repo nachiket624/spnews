@@ -45,13 +45,13 @@
 
 
 <Section class="card-holder">
-    {% for news in newnews %}
+    {% for obj in newnews %}
     <div class="card">
-        <img src="media/{{news.newsthumbnail}}" alt="">
-        <h3>{{news.newstitle}}</h3>
+        <a href="{%url 'news' obj.id%}"><img src="media/{{obj.newsthumbnail}}" alt=""></a>
+        <h3>{{obj.newstitle}}</h3>
         <div class="cardinfo">
-            <span>{{news.newsauthor}}</span>
-            <span>{{news.newstime}}</span>
+            <span>{{obj.newsauthor}}</span>
+            <span>{{obj.newstime}}</span>
         </div>
     </div>
     {% endfor %}

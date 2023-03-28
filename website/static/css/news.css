@@ -1,51 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');    
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap');
-
-.location{
-    color: red;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 24px;
-
+main{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    margin: 1rem 0rem 0rem 2rem;
+    width: 80%;
 }
 
-.newstitle{
-    margin-top: 0.7rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 34px;
-    margin-bottom: 0.2;
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.authorname{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-
-}
-.newsimage img
-{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-    width: auto;
+.image img{
+    width:700px;
     height: 400px;
 }
-.container{
-    /* margin: 25px 50px 75px 100px; */
-    margin: 2rem 0rem 0rem 4rem;
+.para-container{
+    margin: 2rem;
+
 }
-.container{
+.para{
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 26px;
+}
+.v-adsection{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.column1
-{
-    flex: 1 1 auto;
+.v-adsection img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 600px;
+    height: 160px;
+    background-color: antiquewhite;
+    border:none;
 }
-.column2 img
-{
+.adsection{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;    
+}
+.adsection1{
+    background-color: antiquewhite;
+    margin-right: 1rem;
     width: 300px;
-    height: 700px;
+    height: 500px;
+    margin-bottom: 3rem;
 }
-.column2
-{
-    padding-left: 1.5rem;
-    flex: 0 1 auto;
+.adsection2{
+    background-color: antiquewhite;
+    margin-right: 1rem;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 3rem;
 }

@@ -10,57 +10,41 @@
 
 <main>
     <div class="container">
-        <div class="column1">
-            <span class="location">India</span>
-            <br>
-            <span class="newstitle">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis libero? Est.
-            </span>
-            <br>
-            <span class="authorname">ipsum dolor sit </span><span class="publishdate">12-jan-2022</span>
-            <div class="newsimage">
-                <img src="" alt="this is image">
+        {%for data in show%}
+        <div class="info">
+            <span>{{data.newsauthor}}</span>
+            <span>{{data.newstime}}</span>
+        </div>
+        <div class="hedding">
+            <h3>{{data.newstitle}}</h3>
+        </div>
+        <div class="image">
+            <img src="../../media/{{data.newsthumbnail}}"alt="">
+        </div>
+        <div class="para-container">
+            <div class="para">
+               {{data.newspara1}}
+                
             </div>
-            <div class="para1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem veniam ea saepe. Perferendis minus
-                vel, quis recusandae repellendus quam necessitatibus voluptatibus, maiores commodi voluptatum libero
-                repudiandae quos beatae quae vitae cum officia repellat rerum deleniti hic, sit expedita error
-                doloribus ipsam! Similique aut tempora perspiciatis sapiente aspernatur laborum tempore? Quas qui
-                velit id sint molestiae explicabo, quae reprehenderit accusantium mollitia repellat ratione sit
-                illum quaerat, saepe officiis, vero optio numquam necessitatibus dolores magnam hic ipsam. Pariatur
-                dicta laboriosam voluptates molestiae fugit. Quia id laboriosam voluptas sint aspernatur tempora
-                aliquid delectus in, totam ipsum reiciendis ut ad. Soluta saepe error atque ullam molestias tempore
-                asperiores, ipsa vitae esse quibusdam facere similique quidem amet odit magnam laborum sed iure
-                dolorem alias hic. Nemo rerum officiis ea commodi repellat tempora quia amet impedit, blanditiis,
-                laudantium, sint animi. Accusantium quam hic, ut impedit quas illum assumenda molestiae ducimus
-                nesciunt excepturi ex delectus? Molestias, sapiente.
+            <div class="v-adsection">
+                <img src="" alt="">
             </div>
-            <br>
-            <div class="adblock"
-                style="background-color: rgb(61, 62, 62); width: auto; height: 150px; margin: 1rem 6rem;">
-
-            </div>
-            <div class="para2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem veniam ea saepe. Perferendis minus
-                vel, quis recusandae repellendus quam necessitatibus voluptatibus, maiores commodi voluptatum libero
-                repudiandae quos beatae quae vitae cum officia repellat rerum deleniti hic, sit expedita error
-                doloribus ipsam! Similique aut tempora perspiciatis sapiente aspernatur laborum tempore? Quas qui
-                velit id sint molestiae explicabo, quae reprehenderit accusantium mollitia repellat ratione sit
-                illum quaerat, saepe officiis, vero optio numquam necessitatibus dolores magnam hic ipsam. Pariatur
-                dicta laboriosam voluptates molestiae fugit. Quia id laboriosam voluptas sint aspernatur tempora
-                aliquid delectus in, totam ipsum reiciendis ut ad. Soluta saepe error atque ullam molestias tempore
-                asperiores, ipsa vitae esse quibusdam facere similique quidem amet odit magnam laborum sed iure
-                dolorem alias hic. Nemo rerum officiis ea commodi repellat tempora quia amet impedit, blanditiis,
-                laudantium, sint animi. Accusantium quam hic, ut impedit quas illum assumenda molestiae ducimus
-                nesciunt excepturi ex delectus? Molestias, sapiente.
+            <div class="para">
+                 {{data.newspara2}}
             </div>
         </div>
-        <div class="column2">
-            <div class="sidead">
-                <img src="{% static 'img/sidead.jpg' %}" alt="">
-                <P>Connect for advertisement</P>
-            </div>
+        {%endfor%}
+    </div>
+    <div class="adsection">
+        <div class="adsection1">
+            <h3>Contact for advertisement</h3>
+            <h4>12334567890</h4>
         </div>
+        <div class=" adsection2">
+            <h3>Contact for advertisement</h3>
+            <h4>12334567890</h4>
+        </div>
+    </div>
     </div>
 </main>
 {% endblock %}
