@@ -18,7 +18,7 @@ def login_view(request):
             return render(request, "masteradmin/login.html", context)
         login(request, user)
         return redirect('/spadmin/eadmin')
-    return render(request, "admin/")
+    return render(request, "masteradmin/login.html")
 
 
 @login_required(login_url='spadmin')

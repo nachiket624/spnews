@@ -14,14 +14,14 @@
     <header>
         <nav>
             <div class="brand">
-                <label for="brand-label">SP News</label>
+                <label for="brand-label"><a href= "{% url 'index' %}">SP News</a></label>
             </div>
             <div class="nav-items">
                 <ul>
-                    <li><a href="#">राजकारण</a></li>
-                    <li><a href="#">शिक्षण</a></li>
-                    <li><a href="#">राष्ट्र</a></li>
-                    <li><a href="#">राज्य</a></li>
+                    <li><a href= "{% url 'commingsoon' %}">राजकारण</a></li>
+                    <li><a href="{% url 'commingsoon' %}">शिक्षण</a></li>
+                    <li><a href="{% url 'commingsoon' %}">राष्ट्र</a></li>
+                    <li><a href="{% url 'commingsoon' %}">राज्य</a></li>
                 </ul>
             </div>
         </nav>

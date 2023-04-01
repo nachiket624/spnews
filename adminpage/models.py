@@ -8,6 +8,9 @@ class edittor(models.Model):
         ('1', u'Sport'),
         ('2', u'Education'),
         ('3', u'politics'),
+        ('4', u'Nation'),
+        ('5', u'State'),
+
     )
 
     eitName = models.CharField(max_length=200)
@@ -25,6 +28,8 @@ class draft(models.Model):
         ('1', u'Sport'),
         ('2', u'Education'),
         ('3', u'Politics'),
+        ('4', u'Nation'),
+        ('5', u'State'),
     )
     newspage =  models.CharField(max_length=32, choices=sitepages, null=True, blank=False)
     newsthumbnail = models.ImageField(upload_to='images') 
@@ -38,3 +43,19 @@ class draft(models.Model):
     def __str__(self):
         template = '{0.newspage} {0.newstitle}'
         return template.format(self)
+
+class herosection(models.Model):
+    bignewsimage = models.ImageField(upload_to='images')
+    bignewshedding = models.CharField(max_length=300,blank=False)
+    bignewspara1 = models.TextField(max_length=800,blank=False)
+    bignewspara2 = models.TextField(max_length=800,blank=False)
+    heroad = models.ImageField(upload_to='images')
+    newstime = models.DateTimeField()
+    newsauthor = models.CharField(max_length=200,blank=False)
+class herosectionnews(models.Model):
+    sidecard1image = models.ImageField(upload_to='images')
+    sidecard1hedding = models.CharField(max_length=300,blank=False)
+    sidecard1para1 = models.TextField(max_length=800,blank=False)
+    sidecard1para2 = models.TextField(max_length=800,blank=False)
+    newstime = models.DateTimeField()
+    newsauthor = models.CharField(max_length=200,blank=False)

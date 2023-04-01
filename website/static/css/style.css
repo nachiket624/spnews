@@ -9,6 +9,8 @@ nav{
 }
 body{
     margin: 0;
+    padding:0;
+    height:100%;
 }
 nav ul{
     list-style: none;
@@ -55,13 +57,15 @@ footer{
 .hero-news {
     margin: 1rem 2rem;
     display: flex;
+    flex-direction: row;
+    
 }
 
 .rightsection {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
-
+    width: 100%;
 }
 
 .v-cards {
@@ -71,7 +75,6 @@ footer{
 .big-news {
     position: relative;
     text-align: left;
-    color: rgb(244, 120, 120);
 }
 
 .big-news img {
@@ -82,13 +85,17 @@ footer{
 .bottom-left {
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    /* left: 16px; */
     font-family: 'Inter', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 24px;
 }
-
+.bottom-left h4{
+    background: #cac6c69f;
+    padding-left: 0.3rem;
+    padding-right: 0.2rem;
+}
 .ad-section1 img {
     width: 100%;
     height: 250px;
@@ -101,13 +108,13 @@ footer{
 
 }
 
-.ad-section1 span {
+/* .ad-section1 span {
     color: rgb(0, 0, 0);
     font-family: 'Inter', sans-serif;
     font-family: 'Shantell Sans', cursive;
     font-size: 16pt;
     background-color: #dddddd8f;
-}
+} */
 
 .centered {
     position: absolute;
@@ -119,6 +126,7 @@ footer{
 .v-cards {
     display: flex;
     flex: row;
+    
 }
 
 .v-cards {
@@ -129,7 +137,7 @@ footer{
 
 .vcardimg img {
     width: 200px;
-    height: 150px;
+    height: 160px;
 }
 
 .vcardtext {
@@ -176,4 +184,11 @@ footer{
 }
 .card h3{
     padding: 0.1rem;
+}
+footer{
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    align-items: center;
+    /* justify-content: center; */
 }
