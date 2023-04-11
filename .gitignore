@@ -1,0 +1,16 @@
+adminpage/migrations/0006_advertisementmanger_alter_draft_newspage_and_more.py
+adminpage/migrations/0007_alter_advertisementmanger_topage_and_more.py
+adminpage/migrations/__pycache__/0006_advertisementmanger_alter_draft_newspage_and_more.cpython-39.pyc
+adminpage/migrations/__pycache__/0007_alter_advertisementmanger_topage_and_more.cpython-39.pyc
+media/images/bulbul-ahmed-8yawVKD8xf4-unsplash_2QrqIaI.jpg
+media/images/bulbul-ahmed-8yawVKD8xf4-unsplash_TOFtlrQ.jpg
+media/images/sportimge_NFfGYhs.jpg
+media/images/sportimge_w19MfIC.jpg
+website/static/js/script.js
+adminpage/__pycache__/admin.cpython-39.pyc
+adminpage/__pycache__/models.cpython-39.pyc
+website/__pycache__/views.cpython-39.pyc
+.gitignore
+adminpage/__pycache__/admin.cpython-39.pyc
+adminpage/__pycache__/models.cpython-39.pyc
+website/__pycache__/views.cpython-39.pyc

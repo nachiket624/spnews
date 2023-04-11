@@ -6,6 +6,7 @@ nav{
     background-color: rgb(194, 194, 194);
     box-shadow: 1px 1px 1px 2px bisque;
     align-items: center;
+    width: 100%;
 }
 body{
     margin: 0;
@@ -190,5 +191,10 @@ footer{
     position:fixed;
     bottom:0;
     align-items: center;
-    /* justify-content: center; */
+}
+
+
+
+@media (max-width:500px){
+    
 }
