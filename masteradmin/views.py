@@ -17,7 +17,7 @@ def login_view(request):
             context = {"error": "Invalid username or password"}
             return render(request, "masteradmin/login.html", context)
         login(request, user)
-        return redirect('/spadmin/eadmin')
+        return redirect('masteradmin/login.html')
     return render(request, "masteradmin/login.html")
 
 

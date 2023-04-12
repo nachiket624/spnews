@@ -3,17 +3,21 @@
 {% block content %}
 
 <section class="hero-news">
-
     <div class="big-news">
+<<<<<<< HEAD
         {%if hero %}
+=======
+        {% if hero %}
+>>>>>>> main
         <a href="{%url 'herosection' hero.id%}">
         <img src="media/{{hero.bignewsimage}}">
         <div class="bottom-left">
-            <h4>{{obj.bignewshedding}}</h4>
+            <h4>{{hero.bignewshedding}}</h4>
         </div>
         {% endif %}
     </div></a>
     <div class="rightsection">
+<<<<<<< HEAD
         {% if hero %}
         <div class="ad-section1" style ">
             <img src="media/{{hero.heroad}}">
@@ -21,6 +25,16 @@
         </div>
         {% endif %}
     
+=======
+        {% if newnews %}
+        <div class="ad-section1" style ">
+            <img src="media/{{newnews.heroad}}">
+            <div class="centered"><span>जाहिरात,वाढदिवस,शुभेच्छा, बातम्यासाठी SP NEWS ७२१८४८७६७६
+            </span></div>
+        </div>
+        {% endif %}
+
+>>>>>>> main
         {% for nhobj in NHero %}
         <div class="v-cards">
             <div class="vcardimg">
