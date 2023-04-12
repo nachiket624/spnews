@@ -5,21 +5,21 @@
 <section class="hero-news">
 
     <div class="big-news">
-        {% for obj in hero %}
-        <a href="{%url 'herosection' obj.id%}">
-        <img src="media/{{obj.bignewsimage}}">
+        {%if hero %}
+        <a href="{%url 'herosection' hero.id%}">
+        <img src="media/{{hero.bignewsimage}}">
         <div class="bottom-left">
             <h4>{{obj.bignewshedding}}</h4>
         </div>
-        {% endfor %}
+        {% endif %}
     </div></a>
     <div class="rightsection">
-        {% for obj in hero %}
+        {% if hero %}
         <div class="ad-section1" style ">
-            <img src="media/{{obj.heroad}}">
+            <img src="media/{{hero.heroad}}">
             <div class="centered"><span>जाहिरातीसाठी संपर्क करा +91 6745237890</span></div>
         </div>
-        {% endfor %}
+        {% endif %}
     
         {% for nhobj in NHero %}
         <div class="v-cards">
