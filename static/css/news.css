@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    margin: 1rem 0rem 0rem 2rem;
+    width: 80%;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width:700px;
+    height: 400px;
+}
+.para-container{
+    margin: 2rem;
+
+}
+.para{
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 26px;
+}
+.v-adsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-adsection img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 600px;
+    height: 160px;
+    background-color: antiquewhite;
+    border:none;
+}
+.adsection{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;    
+}
+.adsection1{
+    background-color: antiquewhite;
+    margin-right: 1rem;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 3rem;
+}
+.adsection2{
+    background-color: antiquewhite;
+    margin-right: 1rem;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 3rem;
+}
