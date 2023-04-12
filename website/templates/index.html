@@ -4,7 +4,11 @@
 
 <section class="hero-news">
     <div class="big-news">
+<<<<<<< HEAD
+        {%if hero %}
+=======
         {% if hero %}
+>>>>>>> main
         <a href="{%url 'herosection' hero.id%}">
         <img src="media/{{hero.bignewsimage}}">
         <div class="bottom-left">
@@ -13,6 +17,15 @@
         {% endif %}
     </div></a>
     <div class="rightsection">
+<<<<<<< HEAD
+        {% if hero %}
+        <div class="ad-section1" style ">
+            <img src="media/{{hero.heroad}}">
+            <div class="centered"><span>जाहिरातीसाठी संपर्क करा +91 6745237890</span></div>
+        </div>
+        {% endif %}
+    
+=======
         {% if newnews %}
         <div class="ad-section1" style ">
             <img src="media/{{newnews.heroad}}">
@@ -21,6 +34,7 @@
         </div>
         {% endif %}
 
+>>>>>>> main
         {% for nhobj in NHero %}
         <div class="v-cards">
             <div class="vcardimg">
