@@ -2,13 +2,15 @@
 {% load static %}
 {% block css %}
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{% static 'css/news.css' %}">
+<meta property="og:image" content="https://picsum.photos/id/237/200/300">
 {% endblock %}
 
 
 {% block content %}
-
 <main>
+<<<<<<< HEAD
     <div class="datetime"></div>
     <div class="headding"></div>
     <div class="thumbnail"></div>
@@ -17,5 +19,44 @@
     <div class="had"></div>
     <div class="vad1"></div>
     <div class="vad2"></div>
+=======
+    {%for data in show%}
+    <div class="info">
+        <span>{{data.newsauthor}}</span>
+        <span>{{data.newstime}}</span>
+    </div>
+    <div class="title">
+        <h3>{{data.newstitle}}</h3>
+    </div>
+    <div class="newsimg">
+        <img src="../../media/{{data.newsthumbnail}}" alt="">
+    </div>
+    <div class="para1">
+        {{data.newspara1}}
+    </div>
+    <div class="para2">
+        {{data.newspara2}}
+    </div>
+    {%endfor%}
+    <div class="had">
+        had
+    </div>
+    <div class="vad1">
+        vas1
+    </div>
+    <div class="vad2">
+        vas2
+    </div>
+    <div class="social">
+        {%for mata in share%}
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="whatsapp://send?text={{mata.newstitle}}"data-action="share/whatsapp/share"  class ="fa fa-whatsapp">
+        </a>
+        {%endfor%}
+    </div>
+>>>>>>> 8ff2fd970a38b675ee9f33315df60870047c409f
 </main>
 {% endblock %}
