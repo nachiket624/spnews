@@ -211,6 +211,7 @@
     display: flex;
     flex: row;
 
+
 }
 
 .v-cards {
@@ -232,14 +233,21 @@
 }
 
 .sectiondivision {
+
+.sectiondivision {
     display: flex;
     flex-direction: row;
+
 
 }
 
 .sectioninfo h2 {
+
+.sectioninfo h2 {
     margin-left: 2rem;
 }
+
+.card-holder {
 
 .card-holder {
     display: flex;
@@ -247,9 +255,13 @@
 }
 
 .card-holder a {
+
+.card-holder a {
     text-decoration: none;
     color: black;
 }
+
+.card {
 
 .card {
     display: flex;
@@ -261,7 +273,10 @@
     margin-left: 1.5rem;
     border: 1px solid rgba(95, 95, 95, 0.607);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
+
+.card h3 {
 
 .card h3 {
     display: flex;
@@ -269,10 +284,15 @@
 
 .card img {
     margin: 0.1rem 0.1rem 0rem 0.1rem;
+
+.card img {
+    margin: 0.1rem 0.1rem 0rem 0.1rem;
     align-self: center;
     width: 298px;
     height: 180px;
 }
+
+.card h3 {
 
 .card h3 {
     padding: 0.1rem;
