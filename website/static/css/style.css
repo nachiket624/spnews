@@ -1,41 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
-<<<<<<< HEAD
-=======
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(194, 194, 194);
-    box-shadow: 1px 1px 1px 2px bisque;
-    align-items: center;
-    width: 100%;
-}
-body{
-    margin: 0;
-    padding:0;
-    height:100%;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    font-family: 'Tiro Devanagari Marathi', serif;
-    font-weight: 600;
-}
-nav li{
-    margin-left: 1.5rem;
-    margin-right: 1rem;
-}
-nav li a{
-    padding: 12px 12px
-}
-nav li a:hover{
-    border-radius: 5px;
->>>>>>> 8ff2fd970a38b675ee9f33315df60870047c409f
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 500px) {
+    header {
+        width: auto;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -72,8 +41,7 @@ nav li a:hover{
     }
 
     .navcontainer {
-        min-width: 100%;
-        max-width: 100%;
+        width: auto;
         margin: auto;
     }
 
@@ -84,12 +52,86 @@ nav li a:hover{
         margin-left: 1rem;
     }
 
+    .brandname {
+        visibility: hidden;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
         background-color: beige;
     }
+}
+
+@media screen and (min-width: 500px) {
+    .brand {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
+
+    .navcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f4d537d6;
+        border-radius: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .brandname {
+        align-items: flex-end;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 24pt;
+    }
+    .brandname a{
+        text-decoration: none;
+        color: rgb(112, 22, 22);
+    }
+    
+    .nav-list {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .nav-list li {
+        margin-left: 2rem;
+        list-style: none;
+    }
+
+    .nav-list li>:last-child {
+        margin-right: 2rem;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #ff5500c2;
+        font-size: 18pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+    }
+    .nav-list a:hover {
+        text-decoration: none;
+        color: #00aeffc2;
+        font-size: 18pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        background-color: rgb(251, 239, 1);
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+    }
+
+
+
 }
 
 
@@ -237,14 +279,8 @@ nav li a:hover{
 }
 
 footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    align-items: center;
-}
-
-
-
-@media (max-width:500px){
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: beige;
 }

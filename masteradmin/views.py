@@ -17,11 +17,7 @@ def login_view(request):
             context = {"error": "Invalid username or password"}
             return render(request, "masteradmin/login.html", context)
         login(request, user)
-<<<<<<< Updated upstream
         return redirect('masteradmin/login.html')
-=======
-        return redirect('/spadmin/eadmin')
->>>>>>> Stashed changes
     return render(request, "masteradmin/login.html")
 
 
