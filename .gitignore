@@ -6,7 +6,8 @@ media/images/bulbul-ahmed-8yawVKD8xf4-unsplash_2QrqIaI.jpg
 media/images/bulbul-ahmed-8yawVKD8xf4-unsplash_TOFtlrQ.jpg
 media/images/sportimge_NFfGYhs.jpg
 media/images/sportimge_w19MfIC.jpg
-website/static/js/script.js
+
+website/__pycache__/
 adminpage/__pycache__/admin.cpython-39.pyc
 adminpage/__pycache__/models.cpython-39.pyc
 website/__pycache__/views.cpython-39.pyc
@@ -14,3 +15,5 @@ website/__pycache__/views.cpython-39.pyc
 adminpage/__pycache__/admin.cpython-39.pyc
 adminpage/__pycache__/models.cpython-39.pyc
 website/__pycache__/views.cpython-39.pyc
+website/__pycache__/urls.cpython-39.pyc
+website/__pycache__/urls.cpython-39.pyc
