@@ -3,17 +3,25 @@
 {% block content %}
 
 <section class="hero-news">
-
     <div class="big-news">
+<<<<<<< HEAD
+<<<<<<< HEAD
         {%if hero %}
+=======
+=======
+<<<<<<< Updated upstream
+>>>>>>> 8ff2fd970a38b675ee9f33315df60870047c409f
+        {% if hero %}
+>>>>>>> main
         <a href="{%url 'herosection' hero.id%}">
         <img src="media/{{hero.bignewsimage}}">
         <div class="bottom-left">
-            <h4>{{obj.bignewshedding}}</h4>
+            <h4>{{hero.bignewshedding}}</h4>
         </div>
         {% endif %}
     </div></a>
     <div class="rightsection">
+<<<<<<< HEAD
         {% if hero %}
         <div class="ad-section1" style ">
             <img src="media/{{hero.heroad}}">
@@ -21,6 +29,37 @@
         </div>
         {% endif %}
     
+=======
+        {% if newnews %}
+        <div class="ad-section1" style ">
+            <img src="media/{{newnews.heroad}}">
+            <div class="centered"><span>जाहिरात,वाढदिवस,शुभेच्छा, बातम्यासाठी SP NEWS ७२१८४८७६७६
+            </span></div>
+        </div>
+        {% endif %}
+
+<<<<<<< HEAD
+>>>>>>> main
+=======
+=======
+        {% for obj in hero %}
+        <a href="{%url 'herosection' obj.id%}">
+        <img src="media/{{obj.bignewsimage}}">
+        <div class="bottom-left">
+            <h4>{{obj.bignewshedding}}</h4>
+        </div>
+        {% endfor %}
+    </div></a>
+    <div class="rightsection">
+        {% for obj in hero %}
+        <div class="ad-section1" style ">
+            <img src="media/{{obj.heroad}}">
+            <div class="centered"><span>जाहिरातीसाठी संपर्क करा +91 6745237890</span></div>
+        </div>
+        {% endfor %}
+    
+>>>>>>> Stashed changes
+>>>>>>> 8ff2fd970a38b675ee9f33315df60870047c409f
         {% for nhobj in NHero %}
         <div class="v-cards">
             <div class="vcardimg">
